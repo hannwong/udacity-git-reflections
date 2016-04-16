@@ -70,8 +70,18 @@ example, if Commit A contains a bug fix for a bug that is also in Branch B, and 
 unreachable by Branch B, that would mean Branch B does not contain the bug fix contributed by Commit
 A.
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+# Reflection 6
+
+## What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result is a new commit that contains the changes from both branches. The "*changes from both
+branches*" actually mean the changes since the branches diverged, at which point is really the
+common commit (base?) of both branches.
+
+Since the new commit contains changes from both branches, it has both branches (the commit at *tip*
+of each branch) as parents. Notice that each regular non-merge commit always contains all the codes
+in its parent, and a diagram would link it to its parent; the same principle applies for merge
+commits that contain codes from multiple parents.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
