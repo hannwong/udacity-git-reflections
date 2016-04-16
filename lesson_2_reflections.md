@@ -59,7 +59,16 @@ integral change, I can commit those staged changes.
 * Creating a bugfix for some published branch, and this fix does not apply for the unpublished
   (experimental or developmental) branch.
 
-How do the diagrams help you visualize the branch structure?
+# Reflection 5
+
+## How do the diagrams help you visualize the branch structure?
+
+They show which commits are reachable by which branches.
+
+Commits that are unreachable by a particular branch will not contribute code to that branch. For
+example, if Commit A contains a bug fix for a bug that is also in Branch B, and if Commit A is
+unreachable by Branch B, that would mean Branch B does not contain the bug fix contributed by Commit
+A.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
