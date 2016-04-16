@@ -58,10 +58,26 @@ in loss of some commits.
 * Work offline, anywhere.
 * Redundancy, in case the remote crashes and is destroyed.
 
-How would you collaborate without using Git or GitHub?  What would be easier,
-and what would be harder?
+# Reflection 5
 
-    Fill in your answer here
+## How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
+
+I would be sending many versions of my files to my team members. We would all be using diff programs
+to hopefully generate visually convenient diffs between the different versions. We would have to
+communicate a lot just to confirm what changes were made and what changes we're supposed to review
+for one another. We would also need an elaborate "*version naming*" convention to ensure we can
+reliably refer to any particular version in our team communication. In short, communicating without
+GitHub's "*Pull Request*" feature would be disjointed and would require non-trivial manual
+coordination.
+
+What would be easier is that we won't have to learn Git and GitHub. Sending versions of files to one
+another via file transfers (DropBox, BitTorrent Sync, etc) is easy; ``git push`` and ``git pull``
+require a non-trivial understanding of Git concepts.
+
+What would be harder is everything else besides what is easy (mentioned above), such as team
+communication, referring to any particular version, making sure we're reviewing the correct changes,
+etc. It may be easy to just send versions of files to one another, but we can also easily get
+overwhelmed by the sheer number of files being thrown back and forth within the team.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
