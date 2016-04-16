@@ -79,7 +79,34 @@ communication, referring to any particular version, making sure we're reviewing 
 etc. It may be easy to just send versions of files to one another, but we can also easily get
 overwhelmed by the sheer number of files being thrown back and forth within the team.
 
-When would you want to make changes in a separate branch rather than directly in
-master?  What benefits does each approach have?
+# Reflection 6
 
-    Fill in your answer here
+## When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
+
+* To keep each programmer's work distinct from one another.
+
+  This way, each programmer won't have his base (his previous commits on the branch he's working on)
+  change from under him.
+
+  This is also great for reviewing each programmer's work to design training programs tailored to
+  each individual programmer.
+
+* To separate work into distinct coherent and integral tracks (branches).
+
+  Like Feature A will be on a separate branch from Feature B, both features being in development at
+  the same time.
+
+The main benefits of using the separate-branch approach has to do with *facilitation of
+collaboration*. Each programmer's work is kept coherent (so is his train of thought) and kept
+integral without interruptive changes from other people. That *coherence of each programmer's work*
+also lends well to easy comprehension of his work by other team members, facilitating peer reviews
+and especially benefiting discussions for merging together work that was done separately.
+
+The main benefit of using the single-branch approach is that we can avoid complex merge
+conflicts. An arguably weak benefit is that all programmers are forced to keep up-to-date with one
+another *at all times* (which can be disrupting to workflow, ironically).  The inevitable *frequent
+call to incorporate all other team member's work* ensures that everyone is up-to-date with everyone
+all the time (or at least when they try to perform a ``git status`` or ``git commit``). As each
+programmer commits onto the single branch, all other programmers will immediately have to check that
+commit and incorporate it into their own work. This approach can only benefit small teams; for
+larger teams, there would be more "*noise*" than actual work done.
