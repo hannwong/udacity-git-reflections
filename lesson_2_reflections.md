@@ -50,8 +50,14 @@ Only ``git add`` from the working directory to the staging area those changes th
 change. After reviewing the staged changes and confirming that they constitute a single logical and
 integral change, I can commit those staged changes.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+# Reflection 4
+
+## What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+* Exploring 2 untested approaches to a problem, and then picking the best parts of both.
+* Creating (and keeping) a feature that may be useful, but may ultimately not be wanted (yet) by users.
+* Creating a bugfix for some published branch, and this fix does not apply for the unpublished
+  (experimental or developmental) branch.
 
 How do the diagrams help you visualize the branch structure?
 
