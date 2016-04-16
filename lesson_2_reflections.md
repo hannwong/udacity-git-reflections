@@ -39,7 +39,16 @@ that but is instead more suited for experimentation, exploration and actual work
 
 Another benefit the staging area provides is the ability for me to make logical and coherent commits
 (units of changes). No matter how much work brain pukes out, I can capture all that work in the
-working directory, and still be able to cleanly craft logical commits via the staging area.
+working directory, and still be able to cleanly craft logical commits
+via the staging area.
+
+# Reflection 3
+
+## How can you use the staging area to make sure you have one commit per logical change?
+
+Only ``git add`` from the working directory to the staging area those changes that make up a logical
+change. After reviewing the staged changes and confirming that they constitute a single logical and
+integral change, I can commit those staged changes.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
