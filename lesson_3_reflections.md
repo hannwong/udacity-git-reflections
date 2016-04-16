@@ -22,10 +22,34 @@ on my local branch.
 What about the case where my local branch contains some commits the remote doesn't have? Does Git
 warn me about that and avoid doing the pull?
 
-Describe the differences between forks, clones, and branches.  When would you
-use one instead of another?
+# Reflection 3
 
-    Fill in your answer here
+## Describe the differences between forks, clones, and branches.  When would you use one instead of another?
+
+Fork is a GitHub feature which basically clones a Git repository residing on GitHub into a new Git
+repository that will also reside on GitHub.
+
+Clone is a Git feature that duplicates an entire Git repository onto another location (which may be
+on another machine or even on the same machine).
+
+Branch is a Git feature that is essentially a label pointing to a commit. In labeling a commit like
+this, all commits from that commit and upstream will be taken as part of the branch.
+
+I would use a Fork to attribute the basis of my new work to the original author of that basis. So,
+when I forked Larry's *recipes* repository, my own *recipes* repository on GitHub would contain a
+link that attributes the basis of my work (on the new repository) to Larry. I would imagine that my
+"*contributing*" to a Fork could be a way for Larry to assess my skills before officially making me
+a contributor (with ``git push`` permissions) on his repository, if he deems me good enough.
+
+I would use a Clone whenever I need to work on a repository from a new location (new machine,
+usually). This is very different from a Fork. If I clone Larry's repository while still having no
+permission to ``git push`` to that repository, my Clone will still *not* allow me to push to that
+repository.
+
+I would use a Branch whenever I need to work on a new feature, experiment or approach within an
+existing repository. I can imagine also using a Branch to *KIV work-in-progress* that I am not sure
+I want to keep or discard. Or, just before I'm about to do some crazy Git operations that may result
+in loss of some commits.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
