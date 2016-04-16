@@ -51,10 +51,12 @@ existing repository. I can imagine also using a Branch to *KIV work-in-progress*
 I want to keep or discard. Or, just before I'm about to do some crazy Git operations that may result
 in loss of some commits.
 
-What is the benefit of having a copy of the last known state of the remote
-stored locally?
+# Reflection 4
 
-    Fill in your answer here
+## What is the benefit of having a copy of the last known state of the remote stored locally?
+
+* Work offline, anywhere.
+* Redundancy, in case the remote crashes and is destroyed.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
