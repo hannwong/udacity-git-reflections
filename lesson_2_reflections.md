@@ -83,5 +83,22 @@ of each branch) as parents. Notice that each regular non-merge commit always con
 in its parent, and a diagram would link it to its parent; the same principle applies for merge
 commits that contain codes from multiple parents.
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+# Reflection 7
+
+## What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pro of automatic merging: Git's automatic merging handles 80% of the merges we encounter. Most of
+the time, a bare minimum of team communication will prevent team members from working on the same
+project areas and potentially duplicating each other's efforts (waste of manpower). Without
+automatic merging, merging efforts would increase at least four times (assuming automatic merging
+handles 80% of all merge cases).
+
+Con of automatic merging: There can be cases where Git's automatic merging goes through without
+issue, but a bug or code duplication actually occurred. Let's say a function was modified by
+Programmer A at line 50, a new invocation of the function was inserted by Programmer B at
+line 100. The new invocation could be surrounded by new code that relied on the old behavior of the
+function before modification by Programmer A. In this case, Git would accept both changes, and cause
+a bug in Programmer B's function invocation.
+
+Test-Driven Development (TDD) can be useful in spotting such errors quickly and pretty much
+automatically (using test suites).
