@@ -32,6 +32,6 @@ Udacity Nanodegree programs always push us students to read further, and still f
 
 The above-mentioned concepts already drastically reduced my *planning paralysis* and increased my *experimental and exploratory work speed*.
 
-I read further concepts that allowed me to practically *zero* my *planning paralysis*. Using ``cherry-pick``, ``stash``, ``rebase`` and ``squash``, I was able to rapid-fire my work and commits, and then quickly re-organize my commits into sane structures before ``push``ing my work.
+I read further concepts that allowed me to practically *zero* my *planning paralysis*. Using ``cherry-pick``, ``stash``, ``rebase`` and ``squash``, I was able to rapid-fire my work and commits, and then quickly re-organize my commits into sane structures before ``push``ing them.
 
-When they said that "*Git is like a big UNDO button*", they didn't mention I could go back and forward in time to do just about corrections I wanted! Marty McFly and Doc Brown (from "*Back To The Future*" movies) would be envious!
+When they said that "*Git is like a big UNDO button*", they didn't mention I could go backward and forward in time to do just about any corrections I wanted! Marty McFly and Doc Brown (from "*Back To The Future*" movies) would be envious!
